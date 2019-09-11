@@ -1,0 +1,65 @@
+.all {
+  margin: 10rpx;
+}
+
+.ban1 {
+  display: flex;
+  margin: 25rpx;
+  border-bottom: 1rpx solid;
+}
+
+.ban2 {
+  align-items: center;
+  font-size: 50rpx;
+  font-weight: bold;
+}
+.ban3{
+  font-size: 30rpx;
+  color: #B8B1B5;
+  margin-left: 10rpx;
+}
+.pin {
+  width: 55rpx;
+  height: 55rpx;
+  align-content: center
+}
+
+.nav {
+  display: flex;
+  margin: 15rpx 15rpx 30rpx 15rpx;
+}
+
+.img {
+  width: 200rpx;
+  height: 300rpx;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: 20rpx;
+  /* align-content: center; */
+  justify-content: space-around;
+}
+
+.name {
+  flex: 1;
+  font-weight: bold;
+}
+
+.tex {
+  font-weight: bold;
+}
+.lond{
+  width: 70rpx;
+  height: 70rpx;
+  margin-left: 45%;
+  font-size: 30rpx;
+  color: #B8B1B5;
+}
+.lond2{
+  text-align: center;
+  font-size: 40rpx;
+  color: #B8B1B5;
+}
+

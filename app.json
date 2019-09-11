@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/message/message",
+    "pages/me/me",
+    "pages/movie/one"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#3a4861",
+    "navigationBarTitleText": "电影推荐",
+    "navigationBarTextStyle": "white",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false,
+    "backgroundColor": "#bcc0c9"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectColor": "#3ade28",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "正在热映",
+        "iconPath": "image/mo.png",
+        "selectedIconPath": "image/mo1.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "即将上映",
+        "iconPath": "image/t.png",
+        "selectedIconPath": "image/t1.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "经典电影",
+        "iconPath": "image/s1.png",
+        "selectedIconPath": "image/s.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,27 @@
+<view class="nav">
+  <view class="nav1">
+    <view class="nav1bar">
+      <image src="{{oneitem.images.large}}" class="nav1image" />
+      <view class="nav1div">
+        <text class="lager">{{oneitem.title}}</text>
+        <text class="lagern">主演：{{oneitem.casts[0].name}}、{{oneitem.casts[1].name}}...</text>
+        <text class="lagern">片长：{{oneitem.durations}}</text>
+        <text class="lagernn">上映时间：{{oneitem.mainland_pubdate}}</text>
+      </view>
+    </view>
+  </view>
+  <!-- <view class="nav2">
+    <video id='myVideo' class="va0" src="{{oneitem.blooper_urls[0]}}"></video>
+  </view> -->
+  <view class="nav2about1">
+    <text class="nav2tell">简介:</text>
+    <view class="nav2self">{{oneitem.summary}}</view>
+  </view>
+  <view class="nav2about1">
+    <text class="nav2tell">影评：</text>
+    <view class="nav2about2" wx:for='{{oneitem.popular_comments}}' wx:key='{{item.id}}'>
+      <text class="nav2one">{{item.author.name}}:</text>
+      <view class="nav2comtent">{{item.content}}</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,22 @@
+<view class="all">
+  <view class="ban1">
+    <text class="ban2">250部经典电影</text>
+  </view>
+  <view class="nav" wx:for='{{getmeg}}' wx:key='{{item.id}}' catchtap="navto" data-id="{{item.id}}">
+    <image class="img" src="{{item.images.large}}" />
+    <view class="content">
+      <view class="name">{{item.title}}</view>
+      <view class="code">
+        <text class="tex">评分：</text> {{item.rating.average}}分
+      </view>
+      <view class="dir">
+        <text class="tex">导演：</text> {{item.directors[0].name}}
+      </view>
+      <view class="player">
+        <text class="tex">类型：</text> {{item.genres[0]}}
+      </view>
+    </view>
+  </view>
+ <image class="lond" wx:if="{{getmore}}" src='/image/timg.gif' />
+    <view class="lond2" wx:else>已加载全部</view>
+</view>
